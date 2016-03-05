@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@android:style/Theme.Holo"
+    >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Confirm:"
+        android:textSize="20dp"
+
+        />
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeightLarge"
+        android:padding="6dip" >
+
+        <ImageView
+            android:id="@+id/icon_confirm_dialog"
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dip"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/recipientName_confirm_dialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Recipient Name"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/icon_confirm_dialog"
+            android:layout_below="@+id/timerName_confirm_dialog"
+            android:layout_above="@+id/sendDate_confirm_dialog" />
+
+        <TextView
+            android:id="@+id/timerName_confirm_dialog"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toRightOf="@id/icon_confirm_dialog"
+            android:gravity="center_vertical"
+            android:text="Timer Name"
+            android:textSize="16sp"
+            android:layout_alignRight="@+id/recipientName_confirm_dialog" />
+
+        <TextView
+            android:id="@+id/sendDate_confirm_dialog"
+            android:layout_width="fill_parent"
+            android:layout_height="17dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Send Date"
+            android:textSize="12sp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/icon_confirm_dialog" />
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:layout_margin="10dp"
+
+        >
+    <TextView
+        android:id="@+id/message_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Message..."
+        android:textSize="20sp"
+
+
+        android:fontFamily="sans-serif-light"
+
+        />
+    </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+
+            >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to Set Time"
+            android:id="@+id/button_back_confirm_dialog"
+            android:layout_gravity="left" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to Send!"
+            android:id="@+id/button_ok_confirm_dialog"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+</LinearLayout>

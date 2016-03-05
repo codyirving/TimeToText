@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="CustomActionBarTheme"
+        parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionBarTabStyle">@style/MyActionBarTabs</item>
+
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/custom_background1</item>
+
+
+    </style>
+
+
+    <!-- ActionBar tabs styles -->
+    <style name="MyActionBarTabs"
+        parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <!-- tab indicator -->
+        <item name="android:background">@drawable/actionbar_tab_indicator</item>
+    </style>
+
+
+    <style name="AppTheme.ConfirmButtons"
+        parent="AppTheme">
+        <item name="android:background">@drawable/custom_button_2</item>
+
+
+</style>
+
+
+
+</resources>

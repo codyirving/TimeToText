@@ -1,0 +1,16 @@
+<resources>
+    <style name="Codyfy" parent="android:Theme.Holo.Light">
+       <!-- <item name="android:windowBackground">@color/SeaGreenScheme_4</item>
+        <item name="android:colorBackground">@color/LightSkyBlue</item>-->
+        <item name="android:fontFamily">@string/sansserrifthin</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+  <!--      <item name="android:textColor">@color/White</item>
+        <item name="android:buttonStyle">@drawable/custom_button_2</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>-->
+    </style>
+
+    <style name="MyActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/SeaGreenScheme_1</item>
+    </style>
+</resources>

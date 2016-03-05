@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"  >
+
+    <TextView
+        android:id="@+id/lbl_your_name"
+        android:text="Your Message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txt_message"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:inputType="textMultiLine"
+
+
+        android:imeOptions="actionDone"
+        android:text="Set..."
+        android:autoText="false"
+        android:editable="true"
+        android:enabled="true"
+        android:focusable="true"
+        android:gravity="top"
+        android:singleLine="false"
+        android:typeface="serif"
+        android:visibility="visible" />
+
+
+
+
+</LinearLayout>
